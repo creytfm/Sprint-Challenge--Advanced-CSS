@@ -161,6 +161,7 @@ p {
   margin: 0 auto;
 }
 header {
+  width: 100%;
   display: flex;
   background-color: #cee9f1;
   flex-direction: column;
@@ -174,12 +175,13 @@ header h1 {
   margin: auto;
   font-size: 3rem;
   padding-bottom: 1rem;
+  justify-content: center;
 }
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 70rem;
+  width: 65%;
   margin: auto;
 }
 nav a {
@@ -240,6 +242,19 @@ nav a {
   height: auto;
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .space-images .blast {
+    display: flex;
+    width: 95% !important ;
+  }
+  .sky {
+    display: none;
+  }
+  .launch {
+    display: none;
+  }
+}
 .intro img {
   border-radius: 8px;
+  width: 100%;
 }
