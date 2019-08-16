@@ -3,28 +3,37 @@
 header {
   width: 100%;
   display: flex;
-  background-color: rgb(206, 233, 241);
+  background-color: rgb(232, 243, 247);
   flex-direction: column;
   align-content: center;
   margin: auto;
   flex-wrap: wrap;
+  padding-top: 1%;
+  padding-bottom: .5%;
+
   h1 {
     .flex();
     margin: auto;
     font-size: 3rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     justify-content: center;
   }
 }
 nav {
   .flex();
   justify-content: space-between;
-  width: 65%;
+  width: 30%;
   margin: auto;
+  margin-bottom:1%;
   a {
     font-family: ubuntu;
     font-size: 1.5rem;
     text-decoration: none;
     color: #23293B;
+  }
+}
+@media (max-width: 500px) {
+  nav{
+    width: 80%
   }
 }
